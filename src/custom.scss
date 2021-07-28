@@ -1,0 +1,40 @@
+/* custom theme colors */
+
+$theme-colors: (
+  'info': tomato,
+  'danger': teal,
+);
+
+$primary: #a4a366;
+$secondary: #9ab6da;
+$dark: #386086;
+$light: #f2efee;
+$success: #66ab57;
+$info: #9ab6da;
+$warning: #e49b1f;
+$danger: #f44336;
+
+/* import bootstrap to set changes */
+@import './themes/custom-bootstrap/custom-bootstrap.scss';
+@import './themes/theme.scss';
+
+@media (max-width: 1920px) and (min-width: 800px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
